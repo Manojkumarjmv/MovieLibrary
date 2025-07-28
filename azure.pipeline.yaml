@@ -1,0 +1,44 @@
+trigger:
+  branches:
+    include:
+      - master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  projectPath: 'MovieLibrary.API/MovieLibrary.API.csproj'
+  webAppName: '<your-app-service-name>'  # 🔁 Replace with your actual App Service name
+
+steps:
+
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '9.x'  # Adjust based on preview/stable SDK
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(projectPath)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '$(projectPath)'
+    arguments: '--configuration $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: true
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: '<your-service-connection>'
+    appType: 'webApp'
+    appName: '$(webAppName)'
+    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'

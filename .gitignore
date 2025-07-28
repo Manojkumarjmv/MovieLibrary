@@ -1,0 +1,39 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# JSON data file
+movies.json
+
+# NuGet packages
+*.nupkg
+packages/
+.nuget/
+
+# Other
+
+AppData/
+*.log
+*.tmp
+*.bak
+*.exe
+*.dll
+node_modules/
+bin/
+obj/

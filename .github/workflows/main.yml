@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release
       - name: Publish
-        run: dotnet publish -c Release -o ./publish
+        run: dotnet publish MoviesAPI.csproj -c Release -o ./publish
       - name: Azure Login
         uses: azure/login@v1
         with:

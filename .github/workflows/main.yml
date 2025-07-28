@@ -34,6 +34,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: MoviesAPI
-          slot-name: dev
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ./publish

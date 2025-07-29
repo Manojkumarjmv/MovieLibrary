@@ -1,0 +1,11 @@
+[
+  {
+    "id": "4e75692e-c138-4a73-b2d1-e685872e6782",
+    "name": "Inception",
+    "genre": "Sci-Fi",
+    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"], 
+    "releaseDate": "2010-07-16T00:00:00",
+    "posterUrl": "https://example.com/inception.jpg",
+    "details": "A mind-bending thriller about dreams within dreams."
+  }
+]

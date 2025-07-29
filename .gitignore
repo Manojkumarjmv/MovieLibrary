@@ -18,8 +18,7 @@ Thumbs.db
 # Logs
 *.log
 
-# JSON data file
-movies.json
+
 
 # NuGet packages
 *.nupkg

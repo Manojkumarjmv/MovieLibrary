@@ -11,4 +11,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="movies.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>

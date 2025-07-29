@@ -5,7 +5,7 @@ namespace MovieLibrary.API.Services
 {
     public class MovieService : IMovieService
     {
-        private readonly string _filePath = "movies1.json";
+        private readonly string _filePath = "movies.json";
 
         public List<Movie> GetAll() =>
             File.Exists(_filePath)

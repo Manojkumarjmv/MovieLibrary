@@ -1,11 +1,1 @@
-[
-  {
-    "id": "4e75692e-c138-4a73-b2d1-e685872e6782",
-    "name": "Inception",
-    "genre": "Sci-Fi",
-    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"], 
-    "releaseDate": "2010-07-16T00:00:00",
-    "posterUrl": "https://example.com/inception.jpg",
-    "details": "A mind-bending thriller about dreams within dreams."
-  }
-]
+[{"Id":"4e75692e-c138-4a73-b2d1-e685872e6782","Name":"Inception","Genre":"Sci-Fi","Actors":["Leonardo DiCaprio","Joseph Gordon-Levitt","Elliot Page"],"ReleaseDate":"2010-07-16T00:00:00","PosterUrl":"https://www.impawards.com/2009/posters/avatar_xlg.jpg","Details":"A mind-bending thriller about dreams within dreams."},{"Id":"dafc84e3-9d72-4042-8530-2f87d0f4d3d5","Name":"Avatar","Genre":"Sci-Fi","Actors":["James Cameron","Sam W"],"ReleaseDate":"2012-07-16T00:00:00","PosterUrl":"http://www.impawards.com/2009/posters/avatar_ver5_xlg.jpg","Details":null},{"Id":"c0ed74d8-f873-45c2-8aa8-bff76def3c43","Name":"Pursuit of Happiness","Genre":"Drama","Actors":["Will Smith"],"ReleaseDate":"2025-08-10T13:02:18.42698+05:30","PosterUrl":"","Details":null},{"Id":"d0378dcc-e756-4ce3-8122-64f33f86cec2","Name":"Kung Fu Panda","Genre":"Kids Fantasy","Actors":["Jackie Chan","Angelina Jolie"],"ReleaseDate":"2009-08-10T00:00:00","PosterUrl":"","Details":null}]
